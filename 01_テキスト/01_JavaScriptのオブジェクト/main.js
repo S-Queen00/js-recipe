@@ -5,12 +5,15 @@ const hikakin = {
   isHappy: true,
   address: {
     country: "日本",
-    city: "東京"
+    city: "東京",
   },
   sayHello: function() {
     console.log("ブンブンハロー YouTube")
-  }
+  },
 }
 
 // 練習問題
 // hikakin オブジェクトに入っている sayHello メソッドを実行してください。
+console.log(sayHello) //違った！
+
+hikakin.sayHello() //これが答え。hikakinというオブジェクトに入ってるから。

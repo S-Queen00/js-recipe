@@ -1,0 +1,35 @@
+//ペアで作ったやつ
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <div>
+      <p1>僕の趣味は何でしょう？</p1>
+    </div>
+    <button id="snow">スノーボート</button>
+    <button id="karaoke">カラオケ</button>
+    <button id="movie">映画鑑賞</button>
+    <div id="answer">あああああああああ</div>
+    <script>
+      const snow = document.getElementById("snow")
+      const karaoke = document.getElementById("karaoke")
+      const movie = document.getElementById("movie")
+      const answer = document.getElementById("answer")
+      snow.onclick = function() {
+        answer.textContent = "違うよ！"
+      }
+      karaoke.onclick = function() {
+        answer.textContent = "違うよ！"
+      }
+      movie.onclick = function() {
+        answer.textContent = "正解！"
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <div>
+      <p1>サキが一番好きなスーパーヒーローは誰でしょう？</p1>
+    </div>
+    <button id="batman">バットマン</button>
+    <button id="capA">キャプテンアメリカ</button>
+    <button id="spidy">スパイダーマン</button>
+    <div id="answer"></div>
+    <script>
+      const spidy = document.getElementById("spidy")
+      const batman = document.getElementById("batman")
+      const capA = document.getElementById("capA")
+      const answer = document.getElementById("answer")
+
+      spidy.onclick = function() {
+        answer.textContent = "正解！"
+      }
+      batman.onclick = function() {
+        answer.textContent = "違うよ！"
+      }
+      capA.onclick = function() {
+        answer.textContent = "３番目くらいかな"
+      }
+    </script>
+  </body>
+</html>

@@ -6,26 +6,31 @@
 //aisatsu.push = ["おやすみ"]
 //console.log(aisatsu)
 
-const memoInput = document.getElementById("memo-input");
-const addButton = document.getElementById("add-button");
-const memoContainer = document.getElementById("memo-container");
-let memos = ["おはよう", "こんにちは", "こんばんは"];
+const memoInput = document.getElementById("memo-input")
+const addButton = document.getElementById("add-button")
+const memoContainer = document.getElementById("memo-container")
+let memos = ["おはよう", "こんにちは", "こんばんは"]
 
 //console.dir(memoinput);
 
-addButton.onclick = function () {
-  const text = memoInput.value;
-  const card = document.createElement("div");
-  card.textContent = text;
-  memoContainer.append(card);
+addButton.onclick = function() {
+  const text = memoInput.value
+  const card = document.createElement("div")
+  card.textContent = text
+  memoContainer.append(card)
 
-  memos.push(memoInput.value);
+  memos.push(memoInput.value)
 
   updateMemoContainer()
-};
+}
 
-const updateMemoContainer = function(){
+const updateMemoContainer = function() {
   memoContainer.innerHTML = ""
 }
 
-for ()
+for (let i = 0; i < memos.length; i++) {
+  const text = memos[i]
+  const div = document.createElement("div")
+  div.textContent = text
+  memoContainer.append(div)
+}
